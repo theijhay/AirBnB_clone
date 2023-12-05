@@ -8,7 +8,7 @@
 
 ## how to start it
  - Create a repository
- - Clone the repository, for example (git clone https://github.com/your-username/airbnb-clone.git)
+ - Clone the repository, for example (git clone https://githu Cb.com/your-username/airbnb-clone.git)
  - cd into the repository. ( cd AirBnB_clone )
 
 ## How to Use the Command Interpreter.
@@ -17,6 +17,7 @@
 ## Execution
 Your shell should work like this in interactive mode:
 
+```
 $ ./console.py
 (hbnb) help
 
@@ -28,6 +29,8 @@ EOF  help  quit
 (hbnb) 
 (hbnb) quit
 $
+
+```
 But also in non-interactive mode: (like the Shell project in C)
 
 $ echo "help" | ./console.py
@@ -49,6 +52,8 @@ Documented commands (type help <topic>):
 EOF  help  quit
 (hbnb) 
 $
+
+
 All tests should also pass in non-interactive mode: $ echo "python3 -m unittest discover tests" | bash
 
 
@@ -64,5 +69,5 @@ All tests should also pass in non-interactive mode: $ echo "python3 -m unittest 
 
 
 
-To check the specific command syntax and required arguments for each action in the documentation or use the help command for assistance.
+- To check the specific command syntax and required arguments for each action in the documentation or use the help command for assistance.
 Feel free to explore the available commands and customize the project according to your needs. Happy coding!                 
