@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Module for FileStorage class."""
+"""A class FileStorage that serializes instances
+    to a JSON file and deserializes JSON file to instances"""
+    
 import datetime
 import json
 import os
