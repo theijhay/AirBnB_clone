@@ -24,10 +24,9 @@ class HBNBCommand(cmd.Cmd):
     def emptyline(self):
         """Do nothing while receiving an empty line."""
         pass
-    
-    
-    """Create a new instance of the base model"""
+
     def do_create(self, arg):
+
         """Creates a new instance of BaseModel, saves it, and prints the id."""
         args = shlex.split(arg)
         if not args:
@@ -40,7 +39,7 @@ class HBNBCommand(cmd.Cmd):
         new_instance = BaseModel()
         new_instance.save()
         print(new_instance.id)
-    
+
     def do_show(self, arg):
         """Prints the string representation of an instance."""
         args = shlex.split(arg)
@@ -60,9 +59,8 @@ class HBNBCommand(cmd.Cmd):
         if key not in storage:
             print("** no instance found **")
         else:
-            print(storage[key])       
-            
-            
+            print(storage[key])
+
     def do_destroy(self, arg):
         """Deletes an instance based on the class name and id."""
         args = shlex.split(arg)
