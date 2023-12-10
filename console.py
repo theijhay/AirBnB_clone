@@ -1,31 +1,22 @@
 import cmd
 
-class HBNBCommand(cmd.Cmd):
-    
-    
-    """A Simple command processor
 
-    Args:
-        cmd (quit): To exit the program
-    """
-    prompt = '(hbnb)'
-    
+class HBNBCommand(cmd.Cmd):
+    prompt = '(hbnb) '
+
     def do_quit(self, arg):
-        """This line of code exit the program."""
+        """Exit the program."""
         return True
-    
+
     def do_EOF(self, arg):
-        """This line of code also exit the program.
-            with a new line.
-        """
-        print()
+        """Exit the program."""
+        print()  # Add a newline before exiting
         return True
 
     def emptyline(self):
-        """Do nothing on an empty line and the keyword 
-            pass is used.
-        """
+        """Do nothing on an empty line."""
         pass
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
