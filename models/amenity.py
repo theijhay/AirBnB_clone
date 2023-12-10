@@ -3,6 +3,7 @@
 
 from models.base_model import BaseModel
 
+
 class amenity(BaseModel):
     """Class for managing user amentity objects"""
     name = ""
