@@ -1,40 +1,16 @@
 #!/usr/bin/python3
-"""This is a sample Python script that adheres to PEP 8 style guide"""
+"""These line of code calculate the variance of numbers"""
 
 
-class MyClass:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+def calculate_variance(number_list):
+    sum_list = 0
+    for number in number_list:
+        sum_list = sum_list + number
+    mean = sum_list / len(number_list)
 
-    def display_info(self):
-        print(f"Name: {self.name}, Age: {self.age}")
+    sum_squares = 0
+    for number in number_list:
+        sum_squares = sum_squares + number**2
+    mean_squares = sum_squares / len(number_list)
 
-
-def calculate_square(n):
-    """
-    Calculate the square of a number.
-
-    Args:
-        n (int): The number to be squared.
-
-    Returns:
-        int: The square of the input number.
-    """
-    return n ** 2
-
-
-def main():
-    """Create an instance of MyClass"""
-    obj = MyClass(name="Jane", age=10)
-
-    """Display information using the display_info method"""
-    obj.display_info()
-
-    """Calculate and print the square of 5"""
-    result = calculate_square(5)
-    print(f"The square of 5 is: {result}")
-
-
-if __name__ == "__main__":
-    main()
+    return mean_squares - mean**2
