@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 class ExampleClass:
     def __init__(self, name):
         self.name = name
