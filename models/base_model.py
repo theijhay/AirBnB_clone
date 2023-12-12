@@ -5,7 +5,7 @@ A module that implements the BaseModel class
 
 from uuid import uuid4
 from datetime import datetime
-from models import FileStorage
+from models import storage
 
 
 class BaseModel:

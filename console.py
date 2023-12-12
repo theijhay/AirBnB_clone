@@ -3,7 +3,7 @@
 import cmd
 import re
 from shlex import split
-from models import storage
+from models.engine import storage
 from models.base_model import BaseModel
 from models.user import User
 from models.state import State
