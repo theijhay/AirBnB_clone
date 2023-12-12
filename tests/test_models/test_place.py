@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""Unittest module for the Place Class."""
 """Defines unittests for models/place.py.
+
 Unittest classes:
     TestPlace_instantiation
     TestPlace_save
@@ -243,7 +243,6 @@ class TestPlace_to_dict(unittest.TestCase):
         pl = Place()
         with self.assertRaises(TypeError):
             pl.to_dict(None)
-
 
 
 if __name__ == "__main__":
