@@ -5,6 +5,7 @@ A module that implements the BaseModel class
 
 from uuid import uuid4
 from datetime import datetime
+from models import FileStorage
 
 
 class BaseModel:
@@ -17,7 +18,6 @@ class BaseModel:
         Initialize the BaseModel class
         """
 
-        from models import storage
         if not kwargs:
             self.id = str(uuid4())
             self.created_at = self.updated_at = datetime.now()
@@ -35,14 +35,15 @@ class BaseModel:
         Returns the string representation of BaseModel object.
         [<class name>] (<self.id>) <self.__dict__>
         """
-        return "[{}] ({}) {}".format(type(self).__name__, self.id,
-                                     self.__dict__)
+        return "[{}] ({}) {}".format(
+            type(self).__name__,
+            self.id,
+            elf.__dict__)
 
     def save(self):
         """
         Updates 'self.updated_at' with the current datetime
         """
-        from models import storage
         self.updated_at = datetime.now()
         storage.save()
 
