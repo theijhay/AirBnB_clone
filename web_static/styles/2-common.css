@@ -1,5 +1,10 @@
 body {
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+=======
+    margin: 0;
+    padding: 0;
+>>>>>>> 884b73e7ebe6da39766b9e0a6316d4a84f3bf031
 }
